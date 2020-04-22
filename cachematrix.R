@@ -3,7 +3,7 @@
 ## its inverted matrix form
 
 makeCacheMatrix <- function(x = matrix()) {
-  ## This function taxes in a matrix object and outputs a special matrix object
+  ## This function takes in a matrix object and outputs a special matrix object
   ## which can store a cached version of its inverted form
   i <- NULL
   set <- function(y) {
@@ -19,7 +19,10 @@ makeCacheMatrix <- function(x = matrix()) {
 
 
 
-
+##This function can take a special matrix object as input and calculate the inverted
+## form of that matrix efficiently. It can be done efficiently because the function 
+## checks if there if the inverted matrix has already been calculated and cached in
+## the special matrix object.
 cacheSolve <- function(x, ...) {
         ## Return a matrix that is the inverse of 'x'
   i <- x$getinv()
