@@ -1,10 +1,10 @@
-## Put comments here that give an overall description of what your
-## functions do
 
-## Write a short comment describing this function
+## This function will produce a special matrix object which can cache 
+## its inverted matrix form
 
 makeCacheMatrix <- function(x = matrix()) {
-## Write a short comment describing this function
+  ## This function taxes in a matrix object and outputs a special matrix object
+  ## which can store a cached version of its inverted form
   i <- NULL
   set <- function(y) {
     x <<- y
@@ -32,3 +32,5 @@ cacheSolve <- function(x, ...) {
   x$setinv(i)
   i
 }
+
+
